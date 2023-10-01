@@ -1,0 +1,460 @@
+Windows Subsystem for Linux is now available in the Microsoft Store!
+You can upgrade by running 'wsl.exe --update' or by visiting https://aka.ms/wslstorepage
+Installing WSL from the Microsoft Store will give you the latest WSL updates, faster.
+For more information please visit https://aka.ms/wslstoreinfo
+
+Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.10.102.1-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+This message is shown once a day. To disable it please create the
+/home/dhaval07/.hushlogin file.
+dhaval07@ASUS-TUF:~$ docker run -it ubuntu
+root@e8d516e6ea74:/# ls
+bin   dev  home  lib32  libx32  mnt  proc  run   srv  tmp  var
+boot  etc  lib   lib64  media   opt  root  sbin  sys  usr
+root@e8d516e6ea74:/# touch hey.txt
+root@e8d516e6ea74:/# cat > This is Dhaval's container
+> eca
+>
+> ^C
+root@e8d516e6ea74:/# cat hey.txt > This is Dhaval's container
+> ^C
+root@e8d516e6ea74:/# echo "This is Dhaval's container" >>  hey.txt
+root@e8d516e6ea74:/# cat hey.txt
+This is Dhaval's container
+root@e8d516e6ea74:/# exit
+exit
+dhaval07@ASUS-TUF:~$  docker inspect e8d516e6ea74
+[
+    {
+        "Id": "e8d516e6ea7463762e6bd4ba38484b64459d2d9572a657073adb02a5adacedf0",
+        "Created": "2023-09-28T10:22:32.4720734Z",
+        "Path": "/bin/bash",
+        "Args": [],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2023-09-28T10:22:33.6243902Z",
+            "FinishedAt": "2023-09-28T10:25:14.446831Z"
+        },
+        "Image": "sha256:c6b84b685f35f1a5d63661f5d4aa662ad9b7ee4f4b8c394c022f25023c907b65",
+        "ResolvConfPath": "/var/lib/docker/containers/e8d516e6ea7463762e6bd4ba38484b64459d2d9572a657073adb02a5adacedf0/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/e8d516e6ea7463762e6bd4ba38484b64459d2d9572a657073adb02a5adacedf0/hostname",
+        "HostsPath": "/var/lib/docker/containers/e8d516e6ea7463762e6bd4ba38484b64459d2d9572a657073adb02a5adacedf0/hosts",
+        "LogPath": "/var/lib/docker/containers/e8d516e6ea7463762e6bd4ba38484b64459d2d9572a657073adb02a5adacedf0/e8d516e6ea7463762e6bd4ba38484b64459d2d9572a657073adb02a5adacedf0-json.log",
+        "Name": "/gifted_chatterjee",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                35,
+                70
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/87715da45e4186b366442188975d0e68aa4fea870300467f6e2feececa9bb9d7-init/diff:/var/lib/docker/overlay2/7c830d2064a5c172607f0f43615de9f79d5a4cd16ce56368650a827ef87f4607/diff",
+                "MergedDir": "/var/lib/docker/overlay2/87715da45e4186b366442188975d0e68aa4fea870300467f6e2feececa9bb9d7/merged",
+                "UpperDir": "/var/lib/docker/overlay2/87715da45e4186b366442188975d0e68aa4fea870300467f6e2feececa9bb9d7/diff",
+                "WorkDir": "/var/lib/docker/overlay2/87715da45e4186b366442188975d0e68aa4fea870300467f6e2feececa9bb9d7/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "e8d516e6ea74",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": true,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": true,
+            "OpenStdin": true,
+            "StdinOnce": true,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/bin/bash"
+            ],
+            "Image": "ubuntu",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "desktop.docker.io/wsl-distro": "Ubuntu",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "002cb69b788b05288e46fdffb8f156e8c20ca17c9f1891785e8bba4e13084db4",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {},
+            "SandboxKey": "/var/run/docker/netns/002cb69b788b",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "59f1fe887a08f1e0fbf838211d21aa89ac77fc10a3ab4f37212b2d9ef9222191",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]
+dhaval07@ASUS-TUF:~$ vi Dockerfile
+dhaval07@ASUS-TUF:~$ cat Dockerfile
+FROM ubuntu
+MAINTAINER Dhaval Rupapara <rupapradhaval1234@gmail.com>
+RUN apt-get update
+CMD["echo","This is Dhaval's dockerfile"]
+dhaval07@ASUS-TUF:~$ docker build -t dhaval'sImage:1.01
+> ^C
+dhaval07@ASUS-TUF:~$ docker build -t dhaval'sImage:1.01 Dockerfile
+> ^C
+dhaval07@ASUS-TUF:~$ docker build -t dhaval'sImage:1.01 .
+> ^C
+dhaval07@ASUS-TUF:~$ ls
+'C:\Users\rupap\.vscode\System Software and Compiler Design\Lab5\lab5.cpp'
+ Dockerfile
+ dhaval
+ dhaval06
+ dhaval07
+ google-chrome-stable_current_amd64.deb
+dhaval07@ASUS-TUF:~$ vi Dockerfile
+
+[1]+  Stopped                 vi Dockerfile
+dhaval07@ASUS-TUF:~$ vi Docekrfile
+
+[2]+  Stopped                 vi Docekrfile
+dhaval07@ASUS-TUF:~$ vi Docekrfile
+dhaval07@ASUS-TUF:~$ docker build -t  dhaval'sImage .
+> ^C
+dhaval07@ASUS-TUF:~$ docker build -t Image .
+[+] Building 0.0s (0/0)                                docker:default
+ERROR: invalid tag "Image": repository name must be lowercase
+dhaval07@ASUS-TUF:~$ docker build -t myImage .
+[+] Building 0.0s (0/0)                                docker:default
+ERROR: invalid tag "myImage": repository name must be lowercase
+dhaval07@ASUS-TUF:~$ docker build -t my .
+[+] Building 42.8s (5/5) FINISHED                      docker:default
+ => [internal] load build definition from Dockerfile             0.0s
+ => => transferring dockerfile: 170B                             0.0s
+ => [internal] load .dockerignore                                0.0s
+ => => transferring context: 2B                                  0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:lates  0.0s
+ => [1/2] FROM docker.io/library/ubuntu                          0.0s
+ => CANCELED [2/2] RUN apt-get update                           42.7s
+ERROR: failed to solve: Canceled: context canceled
+dhaval07@ASUS-TUF:~$ sdc
+Command 'sdc' not found, but can be installed with:
+sudo apt install hpsockd
+dhaval07@ASUS-TUF:~$ ls
+'C:\Users\rupap\.vscode\System Software and Compiler Design\Lab5\lab5.cpp'
+ Docekrfile
+ Dockerfile
+ dhaval
+ dhaval06
+ dhaval07
+ google-chrome-stable_current_amd64.deb
+dhaval07@ASUS-TUF:~$ cd dhaval07
+dhaval07@ASUS-TUF:~/dhaval07$ ls
+demo.sh   demo3.sh  demo5.sh  index.js  new.sh
+demo2.sh  demo4.sh  demo6.sh  new.s
+dhaval07@ASUS-TUF:~/dhaval07$ mv Dockerfile dhaval07
+mv: cannot stat 'Dockerfile': No such file or directory
+dhaval07@ASUS-TUF:~/dhaval07$ cd ~
+dhaval07@ASUS-TUF:~$ mv Dockerfile dhaval07
+dhaval07@ASUS-TUF:~$ cd dhaval07
+dhaval07@ASUS-TUF:~/dhaval07$ ls
+Dockerfile  demo2.sh  demo4.sh  demo6.sh  new.s
+demo.sh     demo3.sh  demo5.sh  index.js  new.sh
+dhaval07@ASUS-TUF:~/dhaval07$ docker build -t  myImage .
+[+] Building 0.0s (0/0)                                docker:default
+ERROR: invalid tag "myImage": repository name must be lowercase
+dhaval07@ASUS-TUF:~/dhaval07$ docker build -t  myimage .
+[+] Building 34.0s (6/6) FINISHED                                                                                                docker:default
+ => [internal] load .dockerignore                                                                                                          0.0s
+ => => transferring context: 2B                                                                                                            0.0s
+ => [internal] load build definition from Dockerfile                                                                                       0.0s
+ => => transferring dockerfile: 170B                                                                                                       0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:latest                                                                           0.0s
+ => CACHED [1/2] FROM docker.io/library/ubuntu                                                                                             0.0s
+ => [2/2] RUN apt-get update                                                                                                              33.7s
+ => exporting to image                                                                                                                     0.2s
+ => => exporting layers                                                                                                                    0.2s
+ => => writing image sha256:37b4301c0eda89ed2db089728f8b8c8f45b9cf576724b9d31b6a303b9da809b1                                               0.0s
+ => => naming to docker.io/library/myimage                                                                                                 0.0s
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview
+dhaval07@ASUS-TUF:~/dhaval07$ docker scout quickview
+INFO New version 1.0.2 available (installed version is 0.24.1) at https://github.com/docker/scout-cli
+    ✓ Image stored for indexing
+    ✓ Indexed 143 packages
+
+  Your image  myimage:latest        │    0C     0H     2M     9L
+  Base image  ubuntu:22.04          │    0C     0H     2M     9L
+  Updated base image  ubuntu:23.10  │    0C     0H     0M     0L
+                                    │                  -2     -9
+
+What's Next?
+  Learn more about vulnerabilities → docker scout cves myimage:latest
+  Learn more about base image update recommendations → docker scout recommendations myimage:latest
+
+dhaval07@ASUS-TUF:~/dhaval07$ docker run myimage
+This is Dhaval's dockerfile
+dhaval07@ASUS-TUF:~/dhaval07$ docker images
+REPOSITORY                 TAG       IMAGE ID       CREATED             SIZE
+myimage                    latest    37b4301c0eda   About an hour ago   122MB
+dhaval_ubuntu              latest    6fd880f1f80d   2 hours ago         77.8MB
+nginx                      latest    61395b4c586d   7 days ago          187MB
+mongo                      latest    9576663f05bb   3 weeks ago         736MB
+ubuntu                     latest    c6b84b685f35   6 weeks ago         77.8MB
+alpine                     latest    7e01a0d0a1dc   7 weeks ago         7.34MB
+docker/welcome-to-docker   latest    912b66cfd46e   3 months ago        13.4MB
+hello-world                latest    9c7a54a9a43c   4 months ago        13.3kB
+dhaval07@ASUS-TUF:~/dhaval07$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+dhaval07@ASUS-TUF:~/dhaval07$ docker ps -a
+CONTAINER ID   IMAGE           COMMAND                  CREATED             STATUS                         PORTS                  NAMES
+9ba1ba0f6b30   myimage         "echo 'This is Dhava…"   About an hour ago   Exited (0) About an hour ago                          quizzical_goldwasser
+f63cde8d4922   dhaval_ubuntu   "/bin/bash"              2 hours ago         Exited (127) 2 hours ago                              sweet_wescoff
+e8d516e6ea74   ubuntu          "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                                gifted_chatterjee
+514e2a09b180   nginx           "/docker-entrypoint.…"   18 hours ago        Exited (255) 2 hours ago       0.0.0.0:8080->80/tcp   priceless_dijkstra
+dhaval07@ASUS-TUF:~/dhaval07$ docker start 9ba1ba0f6b30
+9ba1ba0f6b30
+dhaval07@ASUS-TUF:~/dhaval07$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+dhaval07@ASUS-TUF:~/dhaval07$ docker prune -f
+unknown shorthand flag: 'f' in -f
+See 'docker --help'.
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Common Commands:
+  run         Create and run a new container from an image
+  exec        Execute a command in a running container
+  ps          List containers
+  build       Build an image from a Dockerfile
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  images      List images
+  login       Log in to a registry
+  logout      Log out from a registry
+  search      Search Docker Hub for images
+  version     Show the Docker version information
+  info        Display system-wide information
+
+Management Commands:
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.11.2-desktop.4)
+  compose*    Docker Compose (Docker Inc., v2.21.0-desktop.1)
+  container   Manage containers
+  context     Manage contexts
+  dev*        Docker Dev Environments (Docker Inc., v0.1.0)
+  extension*  Manages Docker extensions (Docker Inc., v0.2.20)
+  image       Manage images
+  init*       Creates Docker-related starter files for your project (Docker Inc., v0.1.0-beta.7)
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  plugin      Manage plugins
+  sbom*       View the packaged-based Software Bill Of Materials (SBOM) for an image (Anchore Inc., 0.6.0)
+  scan*       Docker Scan (Docker Inc., v0.26.0)
+  scout*      Command line tool for Docker Scout (Docker Inc., 0.24.1)
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Swarm Commands:
+  swarm       Manage Swarm
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a filesystem image
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  wait        Block until one or more containers stop, then print their exit codes
+
+Global Options:
+      --config string      Location of client config files (default "/home/dhaval07/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and default context set
+                           with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket to connect to
+  -l, --log-level string   Set the logging level ("debug", "info", "warn", "error", "fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/home/dhaval07/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/home/dhaval07/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/home/dhaval07/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Run 'docker COMMAND --help' for more information on a command.
+
+For more help on how to use Docker, head to https://docs.docker.com/go/guides/
+
+dhaval07@ASUS-TUF:~/dhaval07$ docker container prune
+WARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] Y
+Deleted Containers:
+9ba1ba0f6b30ab8d14390de295dedf79318d2776a9e7ac326d8fadd5350e3359
+f63cde8d4922feba8706e53a0639f4848ac0fdd13d089eba1694d9ccfef5e7cf
+e8d516e6ea7463762e6bd4ba38484b64459d2d9572a657073adb02a5adacedf0
+514e2a09b1808bb2e08a7c34f5f5a639a62f56e8ad205e13f828efaaa34856a0
+
+Total reclaimed space: 1.458kB
+dhaval07@ASUS-TUF:~/dhaval07$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+dhaval07@ASUS-TUF:~/dhaval07$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+dhaval07@ASUS-TUF:~/dhaval07$ docker

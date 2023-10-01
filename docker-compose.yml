@@ -1,0 +1,13 @@
+version : "3.0"
+
+services:
+  web : 
+    #this is the image name you want to predefine
+    image : web-app
+    #build is for working directory
+    build : .
+    #expose to ports
+    ports : 
+      - "8000:5000"
+  redis : 
+    image : redis 
